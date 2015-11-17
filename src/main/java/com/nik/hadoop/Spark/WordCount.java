@@ -42,7 +42,7 @@ public class WordCount {
       public Integer call(Integer a, Integer b) { return a + b; }
     });
     
-    counts.saveAsTextFile("hdfs://localhost:54310/user/hduser/spark_output/loremipsum_result.txt"); 
+    counts.saveAsTextFile("hdfs://localhost:54310/user/hduser/spark_output"); 
     
     if(context!=null ) {
     	context.close();
